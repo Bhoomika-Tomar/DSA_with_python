@@ -15,12 +15,12 @@ class Solution:
 		    #If k is greater than mat[i][j] then search in down
 		    #direction i.e. column
 		    if x > mat[i][j]:
-		        i = i + 1;
+		        i = i + 1
 		        
 		    #If k is less than mat[i][j] then search in left
 		    #direction i.e. row
 		    elif x < mat[i][j]:
-		        j = j - 1;
+		        j = j - 1
 		    
 		    #If k is found at mat[i][j]
 		    else:
