@@ -22,7 +22,7 @@ class Solution:
         # code here
         
         n = len(arr)
-        memo = [[-1]* (target+1) for x in range (n+1)]
+        memo = [[-1] * (target+1) for x in range (n+1)]
         #memo[n+1][target+1]
         
         memo[n][target] = self.subsetRec (arr, target, n, memo)
