@@ -20,7 +20,7 @@ class Solution:
             a = max(last[ord(s[i]) - ord('a')], a)
             
             if a == i:
-                count += 1
+                count += 
                 
         return count
                 
