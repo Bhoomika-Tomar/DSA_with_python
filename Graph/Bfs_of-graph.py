@@ -30,7 +30,7 @@ class Solution:
         
 
 
-#{ 
+#{  
  # Driver Code Starts
 import sys
 from queue import Queue
