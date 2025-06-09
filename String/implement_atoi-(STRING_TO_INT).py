@@ -24,3 +24,11 @@ class Solution:
             idx = idx + 1
                 
         return res*sign
+
+
+s = input ("Enter sting")
+sol = Solution()
+print (sol.myAtoi(s))
+
+
+
