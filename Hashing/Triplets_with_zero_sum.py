@@ -1,29 +1,33 @@
+
+#REVISE AGAIN
+
 class Solution:
-    def findTriplets(self, arr):
-        # Your code here
-        
-        #Set to handle duplicacies
+    def findTriplets(self, arr: list[int]) -> list[list[int]]:
         resSet = set()
         mp = {}
         n = len(arr)
-        
-        #Storing sum of pairs with their indices
-        for i in range (n):
-            for j in range(i + 1, n):
-                sum = arr[i] + arr[j]
-                if sum not in mp:
-                    mp[sum] = []
-                mp[sum].append((i,j))
-                
-        #Storing remaining values to find sum as zero
+
+        # Store all pair sums with their indices
         for i in range(n):
-            rem = -arr[i]
+            for j in range(i + 1, n):
+                pair_sum = arr[i] + arr[j]
+                if pair_sum not in mp:
+                    mp[pair_sum] = []
+                mp[pair_sum].append((i, j))
+
+        # For each number, check if its negative is a pair sum
+        for k in range(n):
+            rem = -arr[k]
             if rem in mp:
-                for p in mp[rem]:
-                    #Ensuring no two indices have same value
-                    if p[0] != i and p[1] != i:
-                        curr = sorted ([i, p[0], p[1]])
-                        resSet.add(tuple(curr))
-                        
-        return [list(triplet) for triplet in resSet]
-                    
+                for i, j in mp[rem]:
+                    if k != i and k != j:
+                        triplet = tuple(sorted([arr[i], arr[j], arr[k]]))
+                        resSet.add(triplet)
+
+        # Convert set of tuples to list of lists
+        return [list(t) for t in resSet]
+
+
+arr = list(map(int, input("Enter array: ").split()))
+sol = Solution()
+print(sol.findTriplets(arr))
