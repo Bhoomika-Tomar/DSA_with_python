@@ -19,3 +19,5 @@ class Solution:
 nums = list(map(int, input("ENTER ARRAY").split()))
 sol = Solution()
 print (sol.maxRotateFunction(nums)) 
+
+g
