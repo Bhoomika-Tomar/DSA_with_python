@@ -26,4 +26,3 @@ c = int (input("Enter the number"))
 sol = Solution()
 print(sol.judgeSquareSum(c))
 
-g
