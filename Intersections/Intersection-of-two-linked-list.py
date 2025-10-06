@@ -12,4 +12,4 @@ class Solution:
 
             currA = currA.next
 
-        return Non
+        return None
