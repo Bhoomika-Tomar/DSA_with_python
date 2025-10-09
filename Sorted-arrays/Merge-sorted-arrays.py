@@ -27,6 +27,6 @@ class Solution:
         while j >= 0:
             nums1[last] = nums2[j]
             j = j -1
-            last = last - 1
+            last = last - 
 
 
