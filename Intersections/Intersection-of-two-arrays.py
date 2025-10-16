@@ -10,4 +10,4 @@ class Solution:
                         result.append(nums1[i])
                         break
 
-        return list(set(result)
+        return list(set(result))
