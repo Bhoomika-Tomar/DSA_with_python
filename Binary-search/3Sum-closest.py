@@ -11,7 +11,7 @@ class Solution:
 
             while l < r:
                 curr_sum = nums[i] + nums[l] + nums[r]
-
+                
                 if abs(curr_sum - target) < abs(closest_sum - target):
                     closest_sum = curr_sum
 
