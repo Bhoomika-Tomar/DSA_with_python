@@ -12,4 +12,4 @@ class Solution:
 
             currA = currA.next
 
-        return Nongit a
+        return None
