@@ -25,4 +25,4 @@ class Solution:
             curr.next = ListNode(val)
             curr = curr.next
 
-        return dummy.next
+        return dummy.nex
