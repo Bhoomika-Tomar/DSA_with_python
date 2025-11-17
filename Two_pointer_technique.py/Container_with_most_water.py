@@ -17,4 +17,4 @@ class Solution:
             else:
                 right = right - 1
                 
-        return res
+        return re
