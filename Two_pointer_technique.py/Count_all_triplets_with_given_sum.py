@@ -35,4 +35,4 @@ class Solution:
                     else:
                         res = res + (count1 * count2) 
                         
-        return res
+        return re
