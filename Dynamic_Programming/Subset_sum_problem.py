@@ -27,5 +27,5 @@ class Solution:
         
         memo[n][target] = self.subsetRec (arr, target, n, memo)
         
-        return memo[n][target
+        return memo[n][target]
         
