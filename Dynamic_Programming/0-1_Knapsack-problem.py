@@ -27,4 +27,4 @@ class Solution:
         
         memo[W][n] = self.knapRec (W, val, wt, n, memo)
         
-        return memo[W][n]
+        return memo[W][n
