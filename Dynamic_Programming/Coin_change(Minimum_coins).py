@@ -36,5 +36,5 @@ class Solution:
 		if memo[n][sum] == float('inf'):
 		    return -1
 		    
-		return memo[n][sum
+		return memo[n][sum]
 
