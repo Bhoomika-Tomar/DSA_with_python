@@ -55,7 +55,7 @@ class Solution:
                         dp[i][j][0] += leftFalse * rightFalse
                         
                         
-        return dp[0][n-1][1
+        return dp[0][n-1][1]
 
 
 #{ 
