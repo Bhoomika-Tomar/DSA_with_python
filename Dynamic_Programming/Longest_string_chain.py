@@ -20,4 +20,4 @@ class Solution:
                     
             res = max(res, dp[w])
             
-        return re
+        return res
