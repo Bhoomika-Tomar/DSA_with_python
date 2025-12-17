@@ -3,7 +3,7 @@ class Solution:
 		# Code here
 		
 		n = len(s1)
-		m = len(s2
+		m = len(s2)
 		
 		dp = [[0]* (m+1) for x in range (n+1)]
 		#dp[n+1][m+1]
