@@ -29,5 +29,5 @@ class Solution:
         
         memo[sum][n] = self.func (sum, n, coins, memo)
         
-        return memo[sum][n
+        return memo[sum][n]
 
