@@ -14,4 +14,4 @@ class Solution:
 
             return count
 
-        return count(right) - count(left-1
+        return count(right) - count(left-1)
