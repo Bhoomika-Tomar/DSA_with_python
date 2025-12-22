@@ -15,7 +15,7 @@ class Solution:
                     dp[i] = True
                     break
                 
-        return 1 if dp[n] else 0
+        return 1 if dp[n] else 
 
 
 #{ 
